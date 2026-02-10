@@ -1,36 +1,104 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 48px;
-  background: #cfeffc;
+    
+    .mini-header {
+        background: #135967;
+        display: flex;
+        padding: 10px 40px;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
 
-  &__logo {
-    font-weight: 700;
-    font-size: 18px;
-  }
+        .mini-context {
+            display: flex;
+            align-items: center;
+            gap: 30px;
 
-  &__nav {
-    display: flex;
-    gap: 24px;
+            .mini-context_phone, .mini-context_email {
+                display: flex;
+                gap: 10px;
+                align-items: center;
 
-    a {
-      text-decoration: none;
-      font-size: 14px;
-      color: #333;
+                p {
+                    color: rgba(255, 255, 255, 0.90);
+                    font-family: "Urbanist", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                    margin: 0;
+                }
+            }
+        }
 
-      &:hover {
-        color: #1f6f78;
-      }
+        .weather-sum {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            p {
+                color: rgba(255, 255, 255, 0.90);
+                font-family: "Urbanist", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                margin: 0;
+            }
+        }
     }
-  }
 
-  &__cta {
-    background: #1f6f78;
-    color: #fff;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
+    .main-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 48px;
+
+        .header_logo {
+            width: 108.458px;
+            height: 135px;
+        }
+
+        .header_nav {
+            display: flex;
+
+            a {
+                text-decoration: none;
+                font-family: "Urbanist", sans-serif;
+                color: #1F7F91 !important;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24.3px;
+                padding: 0 25px;
+
+                &:hover {
+                    color: #08363F !important;
+                }
+            }
+        }
+
+        .ask-question {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            .header_cta {
+                color: #FFF;
+                font-family: "Urbanist", sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20.3px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                background: #1F7F91;
+                border: none;
+                display: flex;
+                padding: 13px 30px 14px 30px;
+                align-items: flex-start;
+                align-self: stretch;
+                cursor: pointer;
+            }
+        }
+    }
 }
